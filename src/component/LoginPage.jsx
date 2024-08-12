@@ -30,41 +30,55 @@ const LoginPage = () => {
   };
 
   return (
-    <Form
-      noValidate
-      validated={validated}
-      onSubmit={handleSubmit}
-      className="m-3"
-    >
-      <Form.Label column="lg" lg={3}>
-        Formulario de Login
-      </Form.Label>
-      <Form.Group as={Col} md="3" controlId="formBasicEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          required
-          type="email"
-          placeholder="Enter your email"
-          defaultValue=""
-          name="email"
-        />
-      </Form.Group>
+    <div className="container-fluid">
+      <div className="row vw-100 justify-content-center align-items-center">
+        <div className="col-auto bg-secondary p-5">
+          <Form
+            className="bg-light p-5"
+            noValidate
+            validated={validated}
+            onSubmit={handleSubmit}
+          >
+            <Form.Label column="lg">Formulario de Login</Form.Label>
+            <Form.Group
+              className="my-3"
+              as={Col}
+              md="12"
+              controlId="formBasicEmail"
+            >
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                required
+                type="email"
+                placeholder="Enter your email"
+                defaultValue=""
+                name="email"
+              />
+            </Form.Group>
 
-      <Form.Group as={Col} md="3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          required
-          type="password"
-          placeholder="Enter your password"
-          defaultValue=""
-          name="password"
-        />
-      </Form.Group>
+            <Form.Group
+              className="my-3"
+              as={Col}
+              md="12"
+              controlId="formBasicPassword"
+            >
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                required
+                type="password"
+                placeholder="Enter your password"
+                defaultValue=""
+                name="password"
+              />
+            </Form.Group>
 
-      <Button type="submit" className="my-3">
-        Login
-      </Button>
-    </Form>
+            <Button type="submit" className="my-3">
+              Login
+            </Button>
+          </Form>
+        </div>
+      </div>
+    </div>
   );
 }
 

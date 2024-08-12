@@ -12,7 +12,7 @@ function App() {
       <Navbar></Navbar>
       {/* <Home></Home> */}
       <RegisterPage></RegisterPage>
-      <LoginPage></LoginPage>
+      {/* <LoginPage></LoginPage> */}
       <Footer></Footer>
     </>
   );
